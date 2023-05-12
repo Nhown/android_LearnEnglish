@@ -63,13 +63,13 @@ public class MainActivity extends AppCompatActivity
 
         menuCau = findViewById(R.id.menu_cau);
         menuTu = findViewById(R.id.menu_tu);
-        menuChiaSe = findViewById(R.id.menu_chia_se);
-        menuDanhGia = findViewById(R.id.menu_danh_gia);
         menuCau.setOnClickListener(this);
         menuTu.setOnClickListener(this);
-        menuDanhGia.setOnClickListener(this);
-        menuChiaSe.setOnClickListener(this);
 
+        menuChiaSe = findViewById(R.id.menu_chia_se);
+        menuDanhGia = findViewById(R.id.menu_danh_gia);
+        menuChiaSe.setOnClickListener(this);
+        menuDanhGia.setOnClickListener(this);
         adView = findViewById(R.id.ad_main);
         new AdBanner(adView);
         new CountAds(this).reset();
@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity
                 drawer.closeDrawers();
             }
             break;
+
         }
 
     }
