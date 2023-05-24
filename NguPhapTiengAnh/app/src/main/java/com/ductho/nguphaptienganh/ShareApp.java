@@ -14,7 +14,7 @@ public class ShareApp {
     private void share(){
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
-        String shareBodyText = context.getString(R.string.app_name);
+        String shareBodyText = "Ứng dụng chưa có trên ggplay nên để cho vuii";
         sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBodyText+"\nhttp://play.google.com/store/apps/details?id=" + context.getPackageName());
         context.startActivity(Intent.createChooser(sharingIntent, "Share:"));
     }
